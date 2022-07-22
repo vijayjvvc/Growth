@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/drawable-v24/btn_bg_border.xml" value="0.1" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/drawable-v24/filter_selector.xml" value="0.1425" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/drawable/btn_bg_dark.xml" value="0.1" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/drawable/btn_bg_light.xml" value="0.1" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/drawable/chart_selector.xml" value="0.1425" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/drawable/ex.xml" value="0.1425" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/drawable/exchange_selector.xml" value="0.1425" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/drawable/filters_selector.xml" value="0.1425" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/drawable/home_selector.xml" value="0.1425" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/drawable/user_selector.xml" value="0.1425" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/layout/activity_stock.xml" value="0.27447916666666666" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/layout/card_portfolio.xml" value="0.1" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/layout/expended_card_details.xml" value="0.264" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/layout/fragment_charts.xml" value="0.1" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/layout/fragment_exchange.xml" value="0.24864130434782608" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/layout/fragment_home.xml" value="0.176" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/layout/fragment_market.xml" value="0.22826086956521738" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/layout/fragment_user.xml" value="0.22826086956521738" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/layout/line_card_details.xml" value="0.26052631578947366" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/layout/market_card_details.xml" value="0.27447916666666666" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/layout/overview.xml" value="0.2734375" />
+        <entry key="..\:/Practice/Android/Growth/app/src/main/res/menu/bottom_menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

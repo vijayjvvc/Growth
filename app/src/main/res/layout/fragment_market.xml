@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:background="@color/white"
+    tools:context=".ui.MarketFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:padding="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Markets"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/notification"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/back" />
+
+            <ImageView
+                android:id="@+id/notification"
+                android:layout_width="50dp"
+                android:padding="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bell"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/MarketsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/in_layout"
+                app:boxStrokeErrorColor="@android:color/holo_red_dark"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/MarketsRecyclerView"
+                android:layout_height="50dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/search_con"
+                    android:padding="1dp"
+                    android:drawableStart="@drawable/search"
+                    android:drawableEnd="@drawable/filter_ic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/black"
+                    android:hint="   Search..."/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/marketMovers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Market Movers"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/in_layout"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/marketMoversRecycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/marketMovers" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/src_icon_card"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/icon_back"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/symbolSrc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/adobe" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="Adb"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/src_icon_card"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/symbolName"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="Adobe Inc"
+            android:textColor="#95000000"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/src_icon_card"
+            app:layout_constraintTop_toBottomOf="@id/symbol" />
+
+        <TextView
+            android:id="@+id/symbolPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="5.49%"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/symbolValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="$643.58"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#9F000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/symbolPointIncrement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="33.49"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/symbolValue" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="130dp"
+            android:layout_height="90dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/icon_stellar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            android:src="@drawable/stellar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/icon_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="5dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="5dp"
+            android:src="@drawable/searching"
+            app:layout_constraintEnd_toStartOf="@id/icon_notification"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/icon_notification"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:src="@drawable/bell"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="Alex Julia"
+            android:textColor="@color/purple_500"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/icon_stellar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPortfolio"
+            android:layout_width="0dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/purple_500"
+            android:clickable="true"
+            app:cardElevation="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icon_stellar"
+            android:focusable="true">
+
+            <include layout="@layout/card_portfolio" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/watchlistText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Watchlist"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardPortfolio" />
+
+            <TextView
+                android:id="@+id/seeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="See All"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/purple_700"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardPortfolio"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/watchlistRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/watchlistText" />
+
+            <TextView
+                android:id="@+id/stocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stocks Activity"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/watchlistRecyclerView" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/stocksActivityRecycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/stocks" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
